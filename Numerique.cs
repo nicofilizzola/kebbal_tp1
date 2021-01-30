@@ -19,7 +19,6 @@ namespace tp1
      class Numerique
     {
         // q1
-        
         public static void sommePaire(int n){
             int sum = 0;
             for (int counter = n; counter > 0; counter--){
@@ -30,11 +29,26 @@ namespace tp1
             //return sum;
             Console.WriteLine(sum);
         }
-        
 
         // q2
         public static void coeffDecomp(int n){
-            string stringN = Convert.ToString(n);
+            double digitAmount = Math.Floor(Math.Log10(n) + 1);
+            string nString = n.ToString();
+            char[] subs = nString.ToCharArray(); // all digits
+            string[] components = new string[400];
+            int counter = 0;
+            Console.Write(n + " = ");
+            foreach (char thisDigit in subs){ // take 
+                if(counter == 0){
+                    components[counter] = thisDigit + " * " + Math.Pow(10, digitAmount - 1);
+                }else{
+                    components[counter] = " + " + thisDigit + " * " + Math.Pow(10, digitAmount - 1);
+                }
+                Console.Write(components[counter]);
+                digitAmount--;
+                counter++; 
+            }
+        Console.ReadLine();
         }
     } 
 }
