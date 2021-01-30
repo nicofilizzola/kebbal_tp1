@@ -35,7 +35,6 @@ namespace tp1
         // q2
         public static void coeffDecomp(int n){
             string stringN = Convert.ToString(n);
-            int length = stringN.Length();
         }
     } 
 }
