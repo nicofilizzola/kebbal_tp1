@@ -6,28 +6,56 @@ namespace tp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Choissisez une méthode : SOMME, PUISSANCE ou DIV");
+            string method = Console.ReadLine();
 
+            // initialisation commune
             Console.Write("Votre nombre : ");
             string n = Console.ReadLine();
-            int IntN = Convert.ToInt32(n);
-            /*Numerique.sommePaire(IntN);*/
-            Numerique.coeffDecomp(IntN);
+            int intN = Convert.ToInt32(n);
 
+            switch(method){
+                case "SOMME":
+                    Numerique.sumPair(intN);
+                    break;
+
+                case "PUISSANCE":
+                    Numerique.coeffDecomp(intN);
+                    break;
+
+                case "DIV":
+                    Console.Write("Divisé par : ");
+                    string x = Console.ReadLine();
+                    int intX = Convert.ToInt32(x);
+                    Numerique.isDivisible(intN, intX);
+                    break;
+
+                default: 
+                    Console.WriteLine("La méthode que vous avez choisi n\'existe pas. Réesayez et vérifiez que vous avez bien marqué SOMME, PUISSANCE ou DIV");
+                    break;
+            }
+            Console.ReadLine();
         }
     }
 
      class Numerique
     {
         // q1
-        public static void sommePaire(int n){
+        public static void sumPair(int n){
+            Console.WriteLine("n = " + n);
             int sum = 0;
             for (int counter = n; counter > 0; counter--){
                 if(counter % 2 == 0 && counter != n){
+                    if(sum == 0){
+                        Console.Write(counter);
+                    }else{
+                        Console.Write(" + " + counter);
+                    }
                     sum += counter;
                 }
             }
             //return sum;
-            Console.WriteLine(sum);
+            Console.Write(" = " + sum);
         }
 
         // q2
@@ -38,7 +66,7 @@ namespace tp1
             string[] components = new string[400];
             int counter = 0;
             Console.Write(n + " = ");
-            foreach (char thisDigit in subs){ // take 
+            foreach (char thisDigit in subs){
                 if(counter == 0){
                     components[counter] = thisDigit + " * " + Math.Pow(10, digitAmount - 1);
                 }else{
@@ -48,7 +76,15 @@ namespace tp1
                 digitAmount--;
                 counter++; 
             }
-        Console.ReadLine();
+        }
+
+        // q3
+        public static void isDivisible(int x, int y){
+            if(x % y == 0){
+                Console.WriteLine("Oui, " + x + " est divisible par " + y);
+            }else{
+                Console.WriteLine("Non, " + x + " n'est pas divisible par " + y);
+            }
         }
     } 
 }
