@@ -49,7 +49,7 @@ namespace tp1
                 Console.WriteLine(ex.Message);
             }
 
-        // Exercice 2
+        // Exercice 2 - GUIOM BODO je suis un changement
 
         }
         
