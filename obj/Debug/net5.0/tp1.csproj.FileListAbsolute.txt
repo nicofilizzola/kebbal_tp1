@@ -14,3 +14,19 @@ C:\Users\NicoF\OneDrive\Documents\MMI\Dev jeu\Kebbal_RES\tp1\obj\Debug\net5.0\tp
 C:\Users\NicoF\OneDrive\Documents\MMI\Dev jeu\Kebbal_RES\tp1\obj\Debug\net5.0\ref\tp1.dll
 C:\Users\NicoF\OneDrive\Documents\MMI\Dev jeu\Kebbal_RES\tp1\obj\Debug\net5.0\tp1.pdb
 C:\Users\NicoF\OneDrive\Documents\MMI\Dev jeu\Kebbal_RES\tp1\obj\Debug\net5.0\tp1.genruntimeconfig.cache
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\bin\Debug\net5.0\tp1.exe
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\bin\Debug\net5.0\tp1.deps.json
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\bin\Debug\net5.0\tp1.runtimeconfig.json
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\bin\Debug\net5.0\tp1.runtimeconfig.dev.json
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\bin\Debug\net5.0\tp1.dll
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\bin\Debug\net5.0\ref\tp1.dll
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\bin\Debug\net5.0\tp1.pdb
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\tp1.csprojAssemblyReference.cache
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\tp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\tp1.AssemblyInfoInputs.cache
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\tp1.AssemblyInfo.cs
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\tp1.csproj.CoreCompileInputs.cache
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\tp1.dll
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\ref\tp1.dll
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\tp1.pdb
+C:\Users\valen\OneDrive\Documents\MMI\Semèstre 4 MMI\Réseau\TP1\obj\Debug\net5.0\tp1.genruntimeconfig.cache

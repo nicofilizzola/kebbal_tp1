@@ -8,26 +8,24 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\NicoF\\.nuget\\packages\\": {}
+    "C:\\Users\\valen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NicoF\\OneDrive\\Documents\\MMI\\Dev jeu\\Kebbal_RES\\tp1\\tp1.csproj",
+      "projectUniqueName": "C:\\Users\\valen\\OneDrive\\Documents\\MMI\\Semèstre 4 MMI\\Réseau\\TP1\\tp1.csproj",
       "projectName": "tp1",
-      "projectPath": "C:\\Users\\NicoF\\OneDrive\\Documents\\MMI\\Dev jeu\\Kebbal_RES\\tp1\\tp1.csproj",
-      "packagesPath": "C:\\Users\\NicoF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NicoF\\OneDrive\\Documents\\MMI\\Dev jeu\\Kebbal_RES\\tp1\\obj\\",
+      "projectPath": "C:\\Users\\valen\\OneDrive\\Documents\\MMI\\Semèstre 4 MMI\\Réseau\\TP1\\tp1.csproj",
+      "packagesPath": "C:\\Users\\valen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\valen\\OneDrive\\Documents\\MMI\\Semèstre 4 MMI\\Réseau\\TP1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\NicoF\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\valen\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

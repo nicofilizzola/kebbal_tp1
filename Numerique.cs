@@ -6,38 +6,69 @@ namespace tp1
     {
         static void Main(string[] args)
         {
+        // Exercice 1
+
             Console.WriteLine("Choissisez une méthode : SOMME, PUISSANCE ou DIV");
             string method = Console.ReadLine();
 
             // initialisation commune
             Console.Write("Votre nombre : ");
-            string n = Console.ReadLine();
-            int intN = Convert.ToInt32(n);
+            try{
+                string n = Console.ReadLine();
+                int intN = Convert.ToInt32(n);
+                validNumber(intN);
 
-            switch(method){
-                case "SOMME":
-                    Numerique.sumPair(intN);
-                    break;
+                switch(method){
+                    case "SOMME":
+                        Numerique.sumPair(intN);
+                        break;
 
-                case "PUISSANCE":
-                    Numerique.coeffDecomp(intN);
-                    break;
+                    case "PUISSANCE":
+                        Numerique.coeffDecomp(intN);
+                        break;
 
-                case "DIV":
-                    Console.Write("Divisé par : ");
-                    string x = Console.ReadLine();
-                    int intX = Convert.ToInt32(x);
-                    Numerique.isDivisible(intN, intX);
-                    break;
+                    case "DIV":
+                        Console.Write("Divisé par : ");
+                        string x = Console.ReadLine();
+                        int intX = Convert.ToInt32(x);
+                        Numerique.isDivisible(intN, intX);
+                        break;
 
-                default: 
-                    Console.WriteLine("La méthode que vous avez choisi n\'existe pas. Réesayez et vérifiez que vous avez bien marqué SOMME, PUISSANCE ou DIV");
-                    break;
+                    default: 
+                        Console.WriteLine("La méthode que vous avez choisi n\'existe pas. Réesayez et vérifiez que vous avez bien marqué SOMME, PUISSANCE ou DIV");
+                        break;
+                }
+                Console.ReadLine();
             }
-            Console.ReadLine();
+            catch(NegativeNumber ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch(NullNumber ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+        // Exercice 2
+
+        }
+        
+        // Exercice 1 : vérifier si le nombre saisi est correct ou non
+        static void validNumber(int Number)
+        {
+            if(Number == 0)
+            {
+                throw new NullNumber(Number);
+            }
+
+            if(Number < 0)
+            {
+                throw new NegativeNumber(Number);
+            }
         }
     }
 
+    // ---------------------------- Classes de l'exercice 1 -----------------------------------------------------------------------------------------
      class Numerique
     {
         // q1
@@ -87,4 +118,30 @@ namespace tp1
             }
         }
     } 
+
+    class NegativeNumber : Exception
+    {
+        public NegativeNumber()
+        {
+        }
+
+        public NegativeNumber(int number) : base(string.Format("ERREUR : {0} est un nombre négatif ! Essayez avec un entier positif gros con !", number))
+        {
+        }
+    }
+
+    class NullNumber : Exception
+    {
+        public NullNumber()
+        {
+        }
+
+        public NullNumber(int number) : base(string.Format("ERREUR : {0} est invalide ! Essaye avec un entier positif sale fdp !", number))
+        {
+        }
+    }
+
+    // ---------------------------- Classes de l'exercice 2 -----------------------------------------------------------------------------------------
+
+    
 }
