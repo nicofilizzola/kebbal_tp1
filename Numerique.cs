@@ -7,10 +7,10 @@ namespace tp1
         static void Main(string[] args)
         {   
             string method = args[0];
-            // initialisation commune
-            Console.Write("Votre nombre : ");
+            string n = args[1];
+            
+
             try{
-                string n = Console.ReadLine();
                 int intN = Convert.ToInt32(n);
                 validNumber(intN);
 
@@ -24,9 +24,9 @@ namespace tp1
                         break;
 
                     case "DIV":
-                        Console.Write("Divisé par : ");
-                        string x = Console.ReadLine();
+                        string x = args[2];
                         int intX = Convert.ToInt32(x);
+                        validNumber(intX);
                         Numerique.isDivisible(intN, intX);
                         break;
 
