@@ -5,16 +5,12 @@ namespace tp1
     class Program
     {
         static void Main(string[] args)
-        {
-        // Exercice 1
+        {   
+            string method = args[0];
+            string n = args[1];
+            
 
-            Console.WriteLine("Choissisez une méthode : SOMME, PUISSANCE ou DIV");
-            string method = Console.ReadLine();
-
-            // initialisation commune
-            Console.Write("Votre nombre : ");
             try{
-                string n = Console.ReadLine();
                 int intN = Convert.ToInt32(n);
                 validNumber(intN);
 
@@ -28,9 +24,9 @@ namespace tp1
                         break;
 
                     case "DIV":
-                        Console.Write("Divisé par : ");
-                        string x = Console.ReadLine();
+                        string x = args[2];
                         int intX = Convert.ToInt32(x);
+                        validNumber(intX);
                         Numerique.isDivisible(intN, intX);
                         break;
 
@@ -48,9 +44,6 @@ namespace tp1
             {
                 Console.WriteLine(ex.Message);
             }
-
-        // Exercice 2
-
         }
         
         // Exercice 1 : vérifier si le nombre saisi est correct ou non
@@ -85,7 +78,7 @@ namespace tp1
                     sum += counter;
                 }
             }
-            //return sum;
+            // return sum;
             Console.Write(" = " + sum);
         }
 
@@ -125,7 +118,7 @@ namespace tp1
         {
         }
 
-        public NegativeNumber(int number) : base(string.Format("ERREUR : {0} est un nombre négatif ! Essayez avec un entier positif gros con !", number))
+        public NegativeNumber(int number) : base(string.Format("ERREUR : {0} est un nombre négatif ! Essayez avec un entier positif !", number))
         {
         }
     }
@@ -136,7 +129,7 @@ namespace tp1
         {
         }
 
-        public NullNumber(int number) : base(string.Format("ERREUR : {0} est invalide ! Essaye avec un entier positif sale fdp !", number))
+        public NullNumber(int number) : base(string.Format("ERREUR : {0} est invalide ! Essaye avec un entier positif !", number))
         {
         }
     }
