@@ -5,12 +5,8 @@ namespace tp1
     class Program
     {
         static void Main(string[] args)
-        {
-        // Exercice 1
-
-            Console.WriteLine("Choissisez une méthode : SOMME, PUISSANCE ou DIV");
-            string method = Console.ReadLine();
-
+        {   
+            string method = args[0];
             // initialisation commune
             Console.Write("Votre nombre : ");
             try{
@@ -48,9 +44,6 @@ namespace tp1
             {
                 Console.WriteLine(ex.Message);
             }
-
-        // Exercice 2 - GUIOM BODO je suis un changement
-
         }
         
         // Exercice 1 : vérifier si le nombre saisi est correct ou non
@@ -85,7 +78,7 @@ namespace tp1
                     sum += counter;
                 }
             }
-            //return sum;
+            // return sum;
             Console.Write(" = " + sum);
         }
 
@@ -125,7 +118,7 @@ namespace tp1
         {
         }
 
-        public NegativeNumber(int number) : base(string.Format("ERREUR : {0} est un nombre négatif ! Essayez avec un entier positif gros con !", number))
+        public NegativeNumber(int number) : base(string.Format("ERREUR : {0} est un nombre négatif ! Essayez avec un entier positif !", number))
         {
         }
     }
@@ -136,7 +129,7 @@ namespace tp1
         {
         }
 
-        public NullNumber(int number) : base(string.Format("ERREUR : {0} est invalide ! Essaye avec un entier positif sale fdp !", number))
+        public NullNumber(int number) : base(string.Format("ERREUR : {0} est invalide ! Essaye avec un entier positif !", number))
         {
         }
     }
